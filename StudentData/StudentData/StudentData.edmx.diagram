@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4207f37b6ad242518e8f00dfa133a942" Name="Diagram1">
+        <EntityTypeShape EntityType="StudentDataModel.Country" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.Department" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.District" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.Gender" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.PoliceStation" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.State" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StudentDataModel.Student" Width="1.5" PointX="9.75" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="StudentDataModel.FK_State_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_District_State" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_PoliceStation_District" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_District" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_PoliceStation" ManuallyRouted="false" />
+        <AssociationConnector Association="StudentDataModel.FK_Student_State" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

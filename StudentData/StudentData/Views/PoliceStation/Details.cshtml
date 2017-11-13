@@ -1,0 +1,35 @@
+﻿@model StudentData.PoliceStation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PoliceStation</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliceStName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PoliceStName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.District.DistrictName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.District.DistrictName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
